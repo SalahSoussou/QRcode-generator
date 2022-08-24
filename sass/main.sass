@@ -1,0 +1,80 @@
+*
+    margin: 0
+    box-sizing: border-box
+
+html
+    font-family: sans-serif
+
+header
+    background-color: #393434
+    padding: 20px 20%
+    margin-bottom: 10px
+    .contaner
+        font-weight: 900
+        color: #fdfafa
+
+.main
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 10px
+    margin: auto
+    max-width: 1200px
+    div
+        margin-left: 24px
+    .div1
+        width: 66%
+        h1
+            font-weight: bold
+            margin-bottom: 5px
+            font-size: 30px
+        form
+            margin-top: 30px
+            .form-box
+                width: 450px
+                border: 2px solid gray
+                height: 36px
+                display: block
+                font-weight: 300
+                color: #2d2929
+                border-radius: 5px
+                margin-bottom: 10px
+                &:focus
+                    outline: none
+            button
+                width: 450px
+                height: 36px
+                background-color: #b2aaaa
+                border-radius: 5px
+                color: #fff
+                padding: 3px 4px
+
+    .div2
+        width: 33%
+        .box
+            width: 50%
+            height: 250px
+            background-color: red
+            margin: auto
+            border-radius: 50%
+            margin-bottom: 10px
+
+@media (max-width : 767px)
+    main
+        .main
+            flex-direction: column-reverse
+            .div1
+                width: 100%
+                text-align: center
+                h1
+                    font-size: 24px
+                form
+                    .form-box
+                        width: 400px
+                        margin-inline: auto
+                    button
+                        width: 400px
+
+            .div2
+                width: 100%
