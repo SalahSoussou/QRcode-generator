@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #393434;
+  padding: 20px 20%;
+  margin-bottom: 10px;
+}
+header .contaner {
+  font-weight: 900;
+  color: #fdfafa;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: auto;
+  max-width: 1200px;
+}
+.main div {
+  margin-left: 24px;
+}
+.main .div1 {
+  width: 66%;
+}
+.main .div1 h1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.main .div1 form {
+  margin-top: 30px;
+}
+.main .div1 form .form-box {
+  width: 450px;
+  border: 2px solid gray;
+  height: 36px;
+  display: block;
+  font-weight: 300;
+  color: #2d2929;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.main .div1 form .form-box:focus {
+  outline: none;
+}
+.main .div1 form button {
+  width: 450px;
+  height: 36px;
+  background-color: #b2aaaa;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px 4px;
+}
+.main .div2 {
+  width: 33%;
+}
+.main .div2 .box {
+  width: 50%;
+  height: 250px;
+  background-color: red;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  main .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .main .div1 {
+    width: 100%;
+    text-align: center;
+  }
+  main .main .div1 h1 {
+    font-size: 24px;
+  }
+  main .main .div1 form .form-box {
+    width: 400px;
+    margin-inline: auto;
+  }
+  main .main .div1 form button {
+    width: 400px;
+  }
+  main .main .div2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
