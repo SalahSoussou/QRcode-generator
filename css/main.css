@@ -187,4 +187,26 @@ header .contaner {
   main .main .div2 .box::before, main .main .div2 .box::after {
     background-size: 250px;
   }
+}
+.result {
+  max-width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.result #qrcode {
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
