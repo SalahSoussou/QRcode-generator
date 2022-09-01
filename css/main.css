@@ -42,6 +42,7 @@ header .contaner {
 }
 .main .div1 {
   width: 66%;
+  height: 440px;
 }
 .main .div1 h1 {
   font-weight: bold;
@@ -207,9 +208,9 @@ header .contaner {
     background-size: 250px;
   }
 }
-.result {
+#result {
   max-width: 80%;
-  margin: 30px auto;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +225,25 @@ header .contaner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
-.result #qrcode {
+#result #qrcode {
   margin: auto;
+  margin-bottom: 10px;
+}
+#result #qrcode img {
+  max-width: 280px;
+}
+#result #saveBtn {
+  background-color: #D87878;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 20px auto;
+  text-decoration: none;
+}
+#result #saveBtn:hover {
+  background-color: #fcafaf;
 }/*# sourceMappingURL=main.css.map */

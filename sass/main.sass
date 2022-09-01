@@ -25,6 +25,7 @@ header
     max-width: 1200px
     .div1
         width: 66%
+        height: 440px
         h1
             font-weight: bold
             margin-bottom: 5px
@@ -135,16 +136,28 @@ header
                     &::before,&::after
                         background-size: 250px
 // result
-.result
+#result
     max-width: 80%
-    margin: 30px auto
+    margin: 0px auto
     display: flex
     flex-direction: column
     text-align: center
     align-items: center
     justify-content: center
-
-    // #loder
-    //     display: none
+    display: none
     #qrcode
         margin: auto
+        margin-bottom: 10px
+        img
+            max-width: 280px
+    #saveBtn
+        background-color: #D87878
+        color: white
+        font-weight: bold
+        padding: 10px 5px
+        border-radius: 5px
+        width: 200px
+        margin: 20px auto
+        text-decoration: none
+        &:hover
+            background-color: #fcafaf

@@ -42,7 +42,7 @@
               <input
                 id="lColor"
                 type="color"
-                value="#ffffff"
+                value="#dadada"
                 placeholder="pic color"
               />
             </div>
@@ -59,16 +59,19 @@
             <button type="submit">convert to QRcode</button>
           </form>
         </div>
-        <div class="div2">
+        <div class="div2" id="animation">
           <div class="box"></div>
+        </div>
+        <div id="result" class="div2">
+          <div id="loder" role="status">Loding...</div>
+          <div id="qrcode"></div>
         </div>
       </div>
       <!-- result div  -->
-      <div class="result">
+      <!-- <div id="result">
         <div id="loder" role="status">Loding...</div>
-
         <div id="qrcode"></div>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
