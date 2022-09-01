@@ -43,6 +43,16 @@ header
                 background-color: hsla(0, 35%, 60%, 1)
                 &:focus
                     outline: none
+            .color-box
+                display: flex
+                justify-content: space-between
+                align-items: center
+                font-size: 10px
+                padding-inline: 10px 40px
+                span
+                    font-size: 14px
+                input
+                    width: 100px
             button
                 width: 450px
                 height: 36px
@@ -59,7 +69,7 @@ header
         padding: 30px
         align-items: center
         flex-direction: column
-        margin-bottom: 30px
+        // margin-bottom: 30px
         .box
             position: relative
             width: 300px
@@ -110,13 +120,14 @@ header
                     font-size: 24px
                 form
                     .form-box
-                        width: 400px
+                        width: 90%
                         margin-inline: auto
                     button
-                        width: 400px
+                        width: 90%
 
             .div2
                 width: 100%
+                margin-bottom: 0
                 .box
                     width: 250px
                     height: 250px
@@ -126,13 +137,13 @@ header
 // result
 .result
     max-width: 80%
-    margin: auto
+    margin: 30px auto
     display: flex
     flex-direction: column
     text-align: center
     align-items: center
     justify-content: center
-    margin-top: 20px
+
     // #loder
     //     display: none
     #qrcode
