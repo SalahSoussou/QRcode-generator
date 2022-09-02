@@ -82,6 +82,9 @@ header .contaner {
 .main .div1 form .color-box span {
   font-size: 14px;
 }
+.main .div1 form .color-box .px-num {
+  width: 50px;
+}
 .main .div1 form .color-box input {
   width: 100px;
 }
@@ -100,7 +103,7 @@ header .contaner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 0 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,6 +111,7 @@ header .contaner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 .main .div2 .box {
   position: relative;
@@ -198,41 +202,41 @@ header .contaner {
   main .main .div2 {
     width: 100%;
     margin-bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .main .div2 .box {
     width: 250px;
     height: 250px;
+    margin: auto;
     background-size: contain;
+    margin-bottom: 20px;
   }
   main .main .div2 .box::before, main .main .div2 .box::after {
     background-size: 250px;
   }
 }
-#result {
-  max-width: 80%;
-  margin: 0px auto;
+#loder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 80%;
+  height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#result #qrcode {
-  margin: auto;
-  margin-bottom: 10px;
+
+#result {
+  max-width: 80%;
 }
 #result #qrcode img {
   max-width: 280px;
+  margin: auto;
 }
 #result #saveBtn {
   background-color: #D87878;
@@ -240,6 +244,8 @@ header .contaner {
   font-weight: bold;
   padding: 10px 5px;
   border-radius: 5px;
+  display: block;
+  text-align: center;
   width: 200px;
   margin: 20px auto;
   text-decoration: none;

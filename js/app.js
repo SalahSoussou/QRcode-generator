@@ -26,7 +26,7 @@ const qrCodeGen = (url, size, dColor, lColor) => {
     height: size,
     colorDark: dColor,
     colorLight: lColor,
-    //   correctLevel: QRCode.CorrectLevel.H,
+    correctLevel: QRCode.CorrectLevel.H,
   });
 };
 
@@ -39,6 +39,10 @@ const saveImg = (imgUrl) => {
   result.appendChild(link);
 };
 
+size.oninput = () => {
+  rangeVle.innerHTML = `${size.value}px`;
+};
+size.style.width = "200px";
 form.onsubmit = (e) => {
   e.preventDefault();
   qr.innerHTML = "";
@@ -52,6 +56,8 @@ form.onsubmit = (e) => {
     alert("Please enter a URL");
   } else {
     showLoder();
+    document.getElementById("animation").style.display = "none";
+
     setTimeout(() => {
       hideLoder();
       showrResult();
